@@ -5,10 +5,12 @@ A repository for notes from the RailsConf 2014 talks
 
 ## File structure
 
+```
 root
 |-- date
 |    |-- talk name
 |    |    |-- [your github handle].md
+```
 
 ## Contributing
 
