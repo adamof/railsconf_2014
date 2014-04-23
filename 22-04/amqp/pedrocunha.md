@@ -1,4 +1,8 @@
-AMQP (advanced message queuing protocol)
+Rack-AMQP: Ditch HTTP inside SOA!
+====
+Josh Szmajda
+
+#### AMQP (advanced message queuing protocol)
 - blind pipe
 - fast
 - open
@@ -7,18 +11,19 @@ AMQP (advanced message queuing protocol)
 - conventions that map easily to http concepts
 - supports the RPC messaging pattern
 
-Rack-AMQP
+##### Rack-AMQP
 - serves Rack applications over AMQP
 
-Jackalope ?
-- they deploy with this
+##### Jackalope
+- the server for deploying to their SOA plataform
 
 Shows a comparison table between HTTP and AMQP
 
-RabbitMQ:
+##### RabbitMQ:
 - open source AMQP broker
 
-AMQParty - API compatibable with HTTParty
+##### AMQParty 
+- API compatibable with HTTParty
 
 Rack::AMQP::Client (built in top of bunny)
 
