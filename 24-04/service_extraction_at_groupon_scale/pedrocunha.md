@@ -3,34 +3,38 @@ Service Extraction at Groupon Scale
 
 Monolith is not necessarily bad thing
 
-Before: 1 app, 1 test suite
+Before
+- 1 app
+- 1 test suite
 
 2009 - 2y old - 3K RPM
+
 8 months later - 30k RPM
 
-Oprah was killing groupon :D
+
+Oprah was killing groupon
+
 
 commits per month
-Jan 2009 ~ 600
-Jan 2011 ~ 2200
+- Jan 2009 ~ 600
+- Jan 2011 ~ 2200
 
 Casual coupling
 - preventing the SOA
 
 code growth - LOC
-0.5M - 2009
-2M   - 2011
+- 0.5M - 2009
+- 2M   - 2011
 
 45 minutes test suite
 
 deploy was 3h
 
-- Order logic to a service
-contention on the db
-the service has read-only access the monolithic 
-has its own db
-
-the main web app repo, has the orders service on `app/services/order`
+Order logic to a service
+- contention on the db
+- the service has read-only access the monolithic 
+- has its own db
+- the main web app repo, has the orders service on `app/services/order`
 
 disable / deprecrate models
 - raise violations quickly
@@ -46,8 +50,8 @@ route 66
 - track dead routes
 
 new service, old schema
-pros: minimal changes aid fast extarction, speedy endpoint roll-out time
-cons: still tied to legacy db schema, lots of cruft remains in the code
+- pros: minimal changes aid fast extarction, speedy endpoint roll-out time
+- cons: still tied to legacy db schema, lots of cruft remains in the code
 
 greenfield + messaging (bus)
 - preserve a legacy API while making devs happy
